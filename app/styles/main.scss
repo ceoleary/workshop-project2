@@ -1,0 +1,71 @@
+// bower:scss
+// endbower
+
+$color: #fff;
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.cover {
+  background-image: url("../images/orsanmichele-inside.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.ribbon {
+  padding: 30px;
+}
+
+body {
+  background: $color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+.front{
+  z-index: 10;
+}
+
+.back{
+  z-index: 0;
+}
+
+#ft-map{
+  margin-bottom: 0px;
+}
+
+#map{
+  margin-top: -50px;
+  padding: 30px 0px;
+  height: 350px;
+  z-index: -3;
+}
+
+#details{
+  height: 200px;
+}

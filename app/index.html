@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orsanmichele</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav>
+     <div class="nav-wrapper indigo darken-2">
+       <a href="#" class="brand-logo">Orsanmichele</a>
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li><a href="sass.html">History</a></li>
+         <li><a href="badges.html">Artwork</a></li>
+         <li><a href="collapsible.html">Visiting Information</a></li>
+       </ul>
+     </div>
+   </nav>
+
+   <!-- Cover image -->
+  <div class="row">
+     <div class="col s12 cover">
+     </div>
+  </div>
+
+  <div class="row front" id="#ft-map">
+    <div class="col s12 center indigo lighten-4">
+      <div class="ribbon">
+        <p>Click the "Explore" button to see what Orsanmichele looks like from the streets of Florence</p>
+        <a class="waves-effect waves-light btn amber accent-3" id="show-map">Explore</a>
+      </div>
+    </div>
+  </div>
+  <div class="row center back ribbon">
+    <div class="col s8 indigo lighten-5" id="map">
+      <h4>Google Maps API</h4>
+      <p>Or a smooth guided animation with labels for each piece of artwork</p>
+      <a class="waves-effect waves-light btn amber accent-3" id="show-details">Details</a>
+    </div>
+    <div class="col s4 indigo lighten-3" id="details">
+      <ul>
+        <li><b>Work of Art</b></li>
+        <li>Artist: John Doe</li>
+        <li>Year: 0000 </li>
+        <li>Material</li>
+      </ul>
+      <p>Breif story of piece. Roughly 5 sentences</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 indigo lighten-4">
+      <h4>History of Orsanmichele</h4>
+      <p>Show D3 of when events occurred</p>
+    </div>
+  </div>
+
+    <footer class="page-footer indigo">
+       <div class="container">
+         <div class="row">
+           <div class="col l6 s12">
+             <h5 class="white-text">Footer Content</h5>
+             <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+           </div>
+           <div class="col l4 offset-l2 s12">
+             <h5 class="white-text">Links</h5>
+             <ul>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+               <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="footer-copyright">
+         <div class="container">
+         © 2014 Copyright Text
+         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+         </div>
+       </div>
+     </footer>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
