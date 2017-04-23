@@ -6,45 +6,51 @@ $(document).ready(function(){
   var detailsOpen = false;
   $('#map').hide();
   $('#details').hide();
+  //$("#back-card").hide();
 
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
-  $('.carousel').carousel({
-      padding: 200
-  });
-  autoplay();
+  animate('#intro', 'zoomIn', false);
+
 
   $('#show-map').click(function(){
     if (mapOpen == false){
       $('#map').show();
-      animate('#map', 'slideInDown');
+      animate('#map', 'slideInDown', false);
       mapOpen = true;
     }
     else if (mapOpen == true){
-      animate('#map', 'slideOutUp');
+      animate('#map', 'slideOutUp', true);
       mapOpen = false;
-      $('#map').hide();
+      if (detailsOpen == true){
+        animate('#details', 'slideOutRight', true);
+        detailsOpen = false;
+      }
     }
   });
   $('#show-details').click(function(){
     if (detailsOpen == false){
+      console.log('show details.');
       $('#details').show();
-      animate('#details', 'slideInRight');
+      animate('#details', 'slideInRight', false);
       detailsOpen = true;
     }
     else if (detailsOpen == true){
-      animate('#details', 'slideOutLeft');
+      console.log('hide details.');
+      animate('#details', 'slideOutRight', true);
       detailsOpen = false;
-      $('#details').hide();
     }
   });
 
-  function animate(element, animation){
+  function animate(element, animation, hide){
     console.log('animate');
     element = $(element);
     element.addClass('animated ' + animation);
     window.setTimeout( function(){
         element.removeClass('animated ' + animation);
-    }, 2000);
+        console.log('end');
+        if(hide == true){
+          element.hide();
+        }
+    }, 1000);
   }
 });
 
